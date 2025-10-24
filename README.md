@@ -1,9 +1,9 @@
 # ComfyUI Blind Watermark
 
+[English](README.md) | [中文文档](README_cn.md)
+
 A powerful blind watermark plugin for ComfyUI that allows you to embed and extract invisible watermarks in images using frequency domain techniques (DWT-DCT-SVD).
 
-[![Python](https://img.shields.io/badge/python->=3.5-green.svg)](https://www.python.org/)
-[![Platform](https://img.shields.io/badge/platform-windows%20|%20linux%20|%20macos-green.svg)](https://github.com/guofei9987/blind_watermark)
 
 ## Features
 
