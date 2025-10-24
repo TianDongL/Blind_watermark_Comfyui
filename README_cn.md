@@ -3,6 +3,7 @@
 [English](README.md) | [中文文档](README_cn.md)
 
 一个强大的 ComfyUI 盲水印插件，允许您使用频域技术（DWT-DCT-SVD）在图像中嵌入和提取不可见的水印。
+本项目基于https://github.com/guofei9987/blind_watermark.git 制作，感谢大佬的开源
 
 
 ## 功能特性

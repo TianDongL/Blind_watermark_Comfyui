@@ -4,6 +4,9 @@
 
 A powerful blind watermark plugin for ComfyUI that allows you to embed and extract invisible watermarks in images using frequency domain techniques (DWT-DCT-SVD).
 
+This project is based on https://github.com/guofei9987/blind_watermark.git Production, thank you for the big shot's open source
+
+
 
 ## Features
 
