@@ -1,0 +1,1001 @@
+{
+  "id": "65fa3342-9b60-4198-b23d-f7175705c2db",
+  "revision": 0,
+  "last_node_id": 71,
+  "last_link_id": 94,
+  "nodes": [
+    {
+      "id": 17,
+      "type": "LoadImage",
+      "pos": [
+        -220,
+        330
+      ],
+      "size": [
+        400,
+        710
+      ],
+      "flags": {},
+      "order": 0,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            50,
+            60
+          ]
+        },
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "links": null
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.3.66",
+        "ue_properties": {
+          "widget_ue_connectable": {
+            "image": true,
+            "upload": true
+          },
+          "version": "7.1",
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": [
+        "ComfyUI_temp_ryvup_00001_.png",
+        "image"
+      ]
+    },
+    {
+      "id": 54,
+      "type": "PreviewImage",
+      "pos": [
+        190,
+        1310
+      ],
+      "size": [
+        140,
+        246
+      ],
+      "flags": {},
+      "order": 5,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 58
+        }
+      ],
+      "outputs": [],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.3.66",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.1",
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": []
+    },
+    {
+      "id": 56,
+      "type": "WatermarkEmbedImage",
+      "pos": [
+        410,
+        1020
+      ],
+      "size": [
+        309.08203125,
+        198
+      ],
+      "flags": {},
+      "order": 6,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "link": 60
+        },
+        {
+          "name": "watermark_image",
+          "type": "IMAGE",
+          "link": 61
+        }
+      ],
+      "outputs": [
+        {
+          "name": "watermarked_image",
+          "type": "IMAGE",
+          "links": [
+            62
+          ]
+        },
+        {
+          "name": "info",
+          "type": "STRING",
+          "links": null
+        }
+      ],
+      "properties": {
+        "aux_id": "guofei9987/blind_watermark",
+        "ver": "322c90dc02d45644692095b34d3a6b735b6edbd8",
+        "ue_properties": {
+          "widget_ue_connectable": {
+            "password_img": true,
+            "password_wm": true,
+            "strength": true,
+            "processes": true,
+            "d1_override": true,
+            "d2_override": true
+          },
+          "version": "7.1",
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": [
+        1,
+        1,
+        1,
+        "auto",
+        0,
+        0
+      ]
+    },
+    {
+      "id": 52,
+      "type": "PreviewImage",
+      "pos": [
+        1900,
+        1040
+      ],
+      "size": [
+        370,
+        480
+      ],
+      "flags": {},
+      "order": 13,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 62
+        }
+      ],
+      "outputs": [],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.3.66",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.1",
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": []
+    },
+    {
+      "id": 59,
+      "type": "LoadImage",
+      "pos": [
+        -270,
+        1620
+      ],
+      "size": [
+        400,
+        710
+      ],
+      "flags": {},
+      "order": 1,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            77
+          ]
+        },
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "links": [
+            79
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.3.66",
+        "ue_properties": {
+          "widget_ue_connectable": {
+            "image": true,
+            "upload": true
+          },
+          "version": "7.1",
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": [
+        "clipspace/clipspace-painted-masked-436920.png [input]",
+        "image"
+      ]
+    },
+    {
+      "id": 65,
+      "type": "PreviewImage",
+      "pos": [
+        380,
+        1850
+      ],
+      "size": [
+        330,
+        470
+      ],
+      "flags": {},
+      "order": 12,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 80
+        }
+      ],
+      "outputs": [],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.3.66",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.1",
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": []
+    },
+    {
+      "id": 64,
+      "type": "INPAINT_MaskedBlur",
+      "pos": [
+        180,
+        1620
+      ],
+      "size": [
+        270,
+        102
+      ],
+      "flags": {},
+      "order": 4,
+      "mode": 0,
+      "inputs": [
+        {
+          "label": "图像",
+          "name": "image",
+          "type": "IMAGE",
+          "link": 77
+        },
+        {
+          "label": "遮罩",
+          "name": "mask",
+          "type": "MASK",
+          "link": 79
+        }
+      ],
+      "outputs": [
+        {
+          "label": "图像",
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            78,
+            80
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfyui-inpaint-nodes",
+        "ver": "726e16ff2742be285b3da78b73333ba6227ad234",
+        "ue_properties": {
+          "widget_ue_connectable": {
+            "blur": true,
+            "falloff": true
+          },
+          "version": "7.1",
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": [
+        255,
+        0
+      ]
+    },
+    {
+      "id": 53,
+      "type": "WatermarkQRCodeGenerator",
+      "pos": [
+        -300,
+        1160
+      ],
+      "size": [
+        400,
+        204
+      ],
+      "flags": {},
+      "order": 2,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "qr_image",
+          "type": "IMAGE",
+          "links": [
+            58,
+            61
+          ]
+        },
+        {
+          "name": "info",
+          "type": "STRING",
+          "links": []
+        }
+      ],
+      "properties": {
+        "aux_id": "guofei9987/blind_watermark",
+        "ver": "322c90dc02d45644692095b34d3a6b735b6edbd8",
+        "ue_properties": {
+          "widget_ue_connectable": {
+            "text": true,
+            "qr_size": true,
+            "error_correction": true,
+            "border": true,
+            "invert": true
+          },
+          "version": "7.1",
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": [
+        "123",
+        128,
+        "M (15%)",
+        2,
+        false
+      ]
+    },
+    {
+      "id": 57,
+      "type": "WatermarkExtractImage",
+      "pos": [
+        780,
+        1630
+      ],
+      "size": [
+        281.1958984375,
+        154
+      ],
+      "flags": {},
+      "order": 11,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "link": 78
+        }
+      ],
+      "outputs": [
+        {
+          "name": "extracted_watermark",
+          "type": "IMAGE",
+          "links": [
+            64,
+            87
+          ]
+        }
+      ],
+      "properties": {
+        "aux_id": "guofei9987/blind_watermark",
+        "ver": "322c90dc02d45644692095b34d3a6b735b6edbd8",
+        "ue_properties": {
+          "widget_ue_connectable": {
+            "wm_width": true,
+            "wm_height": true,
+            "password_img": true,
+            "password_wm": true,
+            "processes": true
+          },
+          "version": "7.1",
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": [
+        128,
+        128,
+        1,
+        1,
+        "auto"
+      ]
+    },
+    {
+      "id": 68,
+      "type": "LayerUtility: DecodeQRCode",
+      "pos": [
+        1160,
+        1600
+      ],
+      "size": [
+        295.9,
+        58
+      ],
+      "flags": {},
+      "order": 16,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "link": 87
+        }
+      ],
+      "outputs": [
+        {
+          "name": "string",
+          "type": "STRING",
+          "links": [
+            88
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "ComfyUI_LayerStyle_Advance",
+        "ver": "64c8317ab33f0208f2e583070acf4f8ef6faca0a",
+        "ue_properties": {
+          "widget_ue_connectable": {
+            "pre_blur": true
+          },
+          "version": "7.1",
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": [
+        2
+      ],
+      "color": "rgba(38, 73, 116, 0.7)"
+    },
+    {
+      "id": 67,
+      "type": "ShowText|pysssss",
+      "pos": [
+        1620,
+        1600
+      ],
+      "size": [
+        300,
+        240
+      ],
+      "flags": {},
+      "order": 17,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "text",
+          "type": "STRING",
+          "link": 88
+        }
+      ],
+      "outputs": [
+        {
+          "label": "字符串",
+          "name": "STRING",
+          "shape": 6,
+          "type": "STRING",
+          "links": null
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfyui-custom-scripts",
+        "ver": "f2838ed5e59de4d73cde5c98354b87a8d3200190",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.1",
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": [
+        "123"
+      ]
+    },
+    {
+      "id": 58,
+      "type": "PreviewImage",
+      "pos": [
+        1180,
+        1900
+      ],
+      "size": [
+        350,
+        590
+      ],
+      "flags": {},
+      "order": 15,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 64
+        }
+      ],
+      "outputs": [],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.3.66",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.1",
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": []
+    },
+    {
+      "id": 48,
+      "type": "PreviewImage",
+      "pos": [
+        910,
+        330
+      ],
+      "size": [
+        140,
+        246.00000000000006
+      ],
+      "flags": {},
+      "order": 7,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 51
+        }
+      ],
+      "outputs": [],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.3.66",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.1",
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": []
+    },
+    {
+      "id": 50,
+      "type": "ShowText|pysssss",
+      "pos": [
+        920,
+        790
+      ],
+      "size": [
+        250,
+        300
+      ],
+      "flags": {},
+      "order": 10,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "text",
+          "type": "STRING",
+          "link": 53
+        }
+      ],
+      "outputs": [
+        {
+          "label": "字符串",
+          "name": "STRING",
+          "shape": 6,
+          "type": "STRING",
+          "links": null
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfyui-custom-scripts",
+        "ver": "f2838ed5e59de4d73cde5c98354b87a8d3200190",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.1",
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": [
+        "=== Watermark Information ===\nWatermark Length: 423 bits\nEstimated Text Length: ~52 bytes\nImage Password: 1\nWatermark Password: 1\nStrength: 1.0\n  -> d1=36, d2=20\n  -> Quality: Balanced"
+      ]
+    },
+    {
+      "id": 69,
+      "type": "WatermarkExtractText",
+      "pos": [
+        1280,
+        580
+      ],
+      "size": [
+        270,
+        130
+      ],
+      "flags": {},
+      "order": 9,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "link": 92
+        },
+        {
+          "name": "wm_length",
+          "type": "INT",
+          "widget": {
+            "name": "wm_length"
+          },
+          "link": 94
+        }
+      ],
+      "outputs": [
+        {
+          "name": "extracted_text",
+          "type": "STRING",
+          "links": [
+            93
+          ]
+        }
+      ],
+      "properties": {
+        "aux_id": "guofei9987/blind_watermark",
+        "ver": "322c90dc02d45644692095b34d3a6b735b6edbd8",
+        "ue_properties": {
+          "widget_ue_connectable": {
+            "wm_length": true,
+            "password_img": true,
+            "password_wm": true,
+            "processes": true
+          },
+          "version": "7.1",
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": [
+        0,
+        1,
+        1,
+        "auto"
+      ]
+    },
+    {
+      "id": 49,
+      "type": "Bjornulf_ShowInt",
+      "pos": [
+        1240,
+        780
+      ],
+      "size": [
+        140,
+        76
+      ],
+      "flags": {},
+      "order": 8,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "INT",
+          "type": "INT",
+          "link": 52
+        }
+      ],
+      "outputs": [],
+      "properties": {
+        "cnr_id": "bjornulf_custom_nodes",
+        "ver": "0a577b39b45feb463685af4dd8dbe65742371f4a",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.1",
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": []
+    },
+    {
+      "id": 47,
+      "type": "WatermarkEmbedText",
+      "pos": [
+        340,
+        490
+      ],
+      "size": [
+        400,
+        272
+      ],
+      "flags": {},
+      "order": 3,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "link": 50
+        }
+      ],
+      "outputs": [
+        {
+          "name": "watermarked_image",
+          "type": "IMAGE",
+          "links": [
+            51,
+            92
+          ]
+        },
+        {
+          "name": "wm_length",
+          "type": "INT",
+          "links": [
+            52,
+            94
+          ]
+        },
+        {
+          "name": "info",
+          "type": "STRING",
+          "links": [
+            53
+          ]
+        }
+      ],
+      "properties": {
+        "aux_id": "guofei9987/blind_watermark",
+        "ver": "322c90dc02d45644692095b34d3a6b735b6edbd8",
+        "ue_properties": {
+          "widget_ue_connectable": {
+            "watermark_text": true,
+            "password_img": true,
+            "password_wm": true,
+            "strength": true,
+            "processes": true,
+            "d1_override": true,
+            "d2_override": true
+          },
+          "version": "7.1",
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": [
+        "Copyright © 2025 版权所有者 All Rights Reserved",
+        1,
+        1,
+        1,
+        "auto",
+        0,
+        0
+      ]
+    },
+    {
+      "id": 70,
+      "type": "ShowText|pysssss",
+      "pos": [
+        1570,
+        580
+      ],
+      "size": [
+        250,
+        300
+      ],
+      "flags": {},
+      "order": 14,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "text",
+          "type": "STRING",
+          "link": 93
+        }
+      ],
+      "outputs": [
+        {
+          "label": "字符串",
+          "name": "STRING",
+          "shape": 6,
+          "type": "STRING",
+          "links": null
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfyui-custom-scripts",
+        "ver": "f2838ed5e59de4d73cde5c98354b87a8d3200190",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.1",
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": [
+        "Copyright © 2025 版权所有者 All Rights Reserved"
+      ]
+    }
+  ],
+  "links": [
+    [
+      50,
+      17,
+      0,
+      47,
+      0,
+      "IMAGE"
+    ],
+    [
+      51,
+      47,
+      0,
+      48,
+      0,
+      "IMAGE"
+    ],
+    [
+      52,
+      47,
+      1,
+      49,
+      0,
+      "INT"
+    ],
+    [
+      53,
+      47,
+      2,
+      50,
+      0,
+      "STRING"
+    ],
+    [
+      58,
+      53,
+      0,
+      54,
+      0,
+      "IMAGE"
+    ],
+    [
+      60,
+      17,
+      0,
+      56,
+      0,
+      "IMAGE"
+    ],
+    [
+      61,
+      53,
+      0,
+      56,
+      1,
+      "IMAGE"
+    ],
+    [
+      62,
+      56,
+      0,
+      52,
+      0,
+      "IMAGE"
+    ],
+    [
+      64,
+      57,
+      0,
+      58,
+      0,
+      "IMAGE"
+    ],
+    [
+      77,
+      59,
+      0,
+      64,
+      0,
+      "IMAGE"
+    ],
+    [
+      78,
+      64,
+      0,
+      57,
+      0,
+      "IMAGE"
+    ],
+    [
+      79,
+      59,
+      1,
+      64,
+      1,
+      "MASK"
+    ],
+    [
+      80,
+      64,
+      0,
+      65,
+      0,
+      "IMAGE"
+    ],
+    [
+      87,
+      57,
+      0,
+      68,
+      0,
+      "IMAGE"
+    ],
+    [
+      88,
+      68,
+      0,
+      67,
+      0,
+      "STRING"
+    ],
+    [
+      92,
+      47,
+      0,
+      69,
+      0,
+      "IMAGE"
+    ],
+    [
+      93,
+      69,
+      0,
+      70,
+      0,
+      "STRING"
+    ],
+    [
+      94,
+      47,
+      1,
+      69,
+      1,
+      "INT"
+    ]
+  ],
+  "groups": [],
+  "config": {},
+  "extra": {
+    "ds": {
+      "scale": 0.96461496450002,
+      "offset": [
+        50.30334247427632,
+        -674.3605334526263
+      ]
+    },
+    "ue_links": [],
+    "links_added_by_ue": [],
+    "frontendVersion": "1.28.7",
+    "VHS_latentpreview": true,
+    "VHS_latentpreviewrate": 0,
+    "VHS_MetadataImage": true,
+    "VHS_KeepIntermediate": true
+  },
+  "version": 0.4
+}
