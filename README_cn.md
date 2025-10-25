@@ -24,7 +24,7 @@
 
 ```bash
 cd ComfyUI/custom_nodes
-git clone https://github.com/YOUR_USERNAME/Comfyui_blind_watermark.git
+git clone https://github.com/TianDongL/Blind_watermark_Comfyui.git
 ```
 
 ### 2. 安装依赖
